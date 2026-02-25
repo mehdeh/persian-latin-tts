@@ -1,0 +1,166 @@
+object Form22: TForm22
+  Left = 0
+  Top = 0
+  Caption = 'Form22'
+  ClientHeight = 606
+  ClientWidth = 789
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 8
+    Top = 39
+    Width = 545
+    Height = 362
+    Center = True
+    Stretch = True
+    OnMouseMove = Image1MouseMove
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Process'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 89
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Draw'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 8
+    Top = 407
+    Width = 105
+    Height = 25
+    Caption = 'Process_S(t)new'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object ListBox1: TListBox
+    Left = 559
+    Top = 16
+    Width = 222
+    Height = 385
+    ItemHeight = 13
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 119
+    Top = 407
+    Width = 75
+    Height = 25
+    Caption = 'Draw_Error'
+    TabOrder = 4
+  end
+  object Chart1: TChart
+    Left = 8
+    Top = 437
+    Width = 593
+    Height = 161
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Text.Strings = (
+      'TChart')
+    Title.Visible = False
+    DepthAxis.Automatic = False
+    DepthAxis.AutomaticMaximum = False
+    DepthAxis.AutomaticMinimum = False
+    DepthAxis.Maximum = 0.530000000000000000
+    DepthAxis.Minimum = -0.470000000000000300
+    LeftAxis.Automatic = False
+    LeftAxis.AutomaticMaximum = False
+    LeftAxis.AutomaticMinimum = False
+    LeftAxis.ExactDateTime = False
+    LeftAxis.Maximum = 32767.000000000010000000
+    LeftAxis.Minimum = -32768.000000000000000000
+    Legend.Visible = False
+    RightAxis.Automatic = False
+    RightAxis.AutomaticMaximum = False
+    RightAxis.AutomaticMinimum = False
+    View3D = False
+    TabOrder = 5
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clBlue
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+    object Series3: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = 4194368
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object Button5: TButton
+    Left = 288
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'SaveToFile'
+    TabOrder = 6
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 706
+    Top = 573
+    Width = 75
+    Height = 25
+    Caption = 'Button6'
+    TabOrder = 7
+    OnClick = Button6Click
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 208
+    Top = 8
+  end
+end
